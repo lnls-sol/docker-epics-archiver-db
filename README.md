@@ -2,4 +2,4 @@
 
 A docker container holding the EPICS Archiver's MySQL server instance.
 
-Execute `build.sh` and `run.sh` to create Docker container and start the database manager respectively.	
+Execute `build-docker-archiver-db.sh` and `run-docker-archiver-db.sh` to create Docker container and start the database manager respectively.	
