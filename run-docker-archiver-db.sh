@@ -3,7 +3,7 @@
 #
 # An auxiliary script to start a new Docker container. It should be used to test the 
 # respective image. To deploy, use the composed repository, available in
-# https://github.com/lnls-sirius/docker-alarm-composed .  
+# https://github.com/lnls-sirius/docker-epics-archiver-composed .  
 #
 # Gustavo Ciotto Pinton
 # Controls Group - Brazilian Synchrotron Light Source Laboratory - LNLS
@@ -29,6 +29,6 @@ fi
 docker run -d --name=${DOCKER_RUN_NAME} -e MYSQL_USER=${MYSQL_USER} -d \
     -e MYSQL_PASSWORD=${MYSQL_PASSWORD} -e MYSQL_DATABASE=${MYSQL_DATABASE} \
     -e MYSQL_ROOT_PASSWORD="controle" -p ${MYSQL_PORT}:${MYSQL_PORT} --network=${NETWORK_ID} \
-    --volumes-from=${DOCKER_VOLUME_NAME} ${DOCKER_MANTAINER_NAME}/${DOCKER_NAME}
+    --volumes-from=${DOCKER_VOLUME_NAME} ${DOCKER_MANTAINER_NAME}/${DOCKER_NAME}:${DOCKER_TAG}
 
 

@@ -25,4 +25,4 @@ if [ -z "${DOCKER_NETWORKS}" ]; then
     docker network create ${NETWORK_ID} &> /dev/null
 fi
 
-docker build -t ${DOCKER_MANTAINER_NAME}/${DOCKER_NAME} .
+docker build -t ${DOCKER_MANTAINER_NAME}/${DOCKER_NAME}:${DOCKER_TAG} .
