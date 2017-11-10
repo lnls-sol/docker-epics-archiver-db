@@ -1,8 +1,9 @@
 #!/bin/bash
 
-DOCKER_MANTAINER_NAME=gciotto
+DOCKER_MANTAINER_NAME=lnlscon
 DOCKER_NAME=epics-archiver-mysql-db
 DOCKER_RUN_NAME=epics-archiver-mysql-db
+DOCKER_TAG=latest
 
 DOCKER_VOLUME_NAME=archiver-mysql-db-volume
 MYSQL_DATA=/var/lib/mysql
