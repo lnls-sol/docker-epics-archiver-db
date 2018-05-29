@@ -14,3 +14,4 @@ MYSQL_DATABASE=lnls_archiver_db
 MYSQL_PORT=3306
 
 NETWORK_ID=epics-archiver-network
+PGDATA=/tmp/db:/var/lib/mysql
