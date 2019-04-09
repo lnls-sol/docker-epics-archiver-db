@@ -9,6 +9,11 @@
 
 . ./env-vars.sh
 
+if [ ! -d "/opt/epics-archiver-appliances/db" ]; then
+    mkdir -p /opt/epics-archiver-appliances/db
+fi
+
+
 ### Creates a new storage volume for the container if it doesn't exist ###
 # Checks if the volume already exists
 DOCKER_DATA_CONTAINERS=$(docker ps -a | grep ${DOCKER_VOLUME_NAME})
